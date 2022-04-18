@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+//logger middleware function logs the date and time and status code to the request_logs.txt file
 module.exports = {
   loggerFunc: (req, res, next) => {
     let current_datetime = new Date();

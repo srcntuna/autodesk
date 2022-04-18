@@ -9,6 +9,8 @@ const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+//http://localhost:3000/getAPIResponse get request for below URL
 app.get('/getAPIResponse', logger.loggerFunc, (req, res) => {
   api_helper
     .make_API_call(
